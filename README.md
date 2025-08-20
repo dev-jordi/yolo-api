@@ -3,27 +3,12 @@
 Uma API simples de **detecção de objetos** usando **YOLOv5 + FastAPI**, empacotada em **Docker**.  
 Você envia uma imagem → a API retorna as detecções (bounding boxes, classes e confiabilidade).
 
----
-
 ## ✨ Tecnologias usadas
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-✨-green?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-🔥-red?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![YOLOv5](https://img.shields.io/badge/YOLOv5-🚀-orange?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ultralytics/yolov5)
 [![Docker](https://img.shields.io/badge/Docker-🐳-blue?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-
-
----
-
-## 📂 Estrutura do projeto
-
-yolo-api/
-├── app/
-│   ├── main.py             # Código da API
-│   └── requirements.txt    # Dependências Python
-├── Dockerfile              # Imagem Docker
-└── README.md
-
 
 ## ⚡ Como rodar o projeto
 
@@ -68,8 +53,6 @@ Resposta:
 
 ## 📸 Exemplo de detecção
 
-#print
+#print1
 
-## 👨‍💻 Autor
-
-Feito por Jordi
+#print2
