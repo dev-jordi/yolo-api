@@ -18,13 +18,19 @@ git clone https://github.com/seu-usuario/yolo-api.git
 cd yolo-api
 ```
 
-## 2 Construir a imagem Docker
+## 2. Instalar as dependências do projeto
+
+```bash
+pip install -r app/requirements.txt yolov5
+```
+
+## 3. Construir a imagem Docker
 
 ```bash
 docker build -t yolo-api .
 ```
 
-## 3. Rodar o container
+## 4. Rodar o container
 
 ```bash
 docker run -p 8000:8000 yolo-api
@@ -33,7 +39,7 @@ docker run -p 8000:8000 yolo-api
 A API ficará disponível em:
 👉 http://localhost:8000/docs
 
-Resposta:
+Exemplo:
 
 ```bash
 {
@@ -51,7 +57,7 @@ Resposta:
 }
 ```
 
-## 📸 Exemplo de detecção
+## 📸 Exemplo de detecção:
 
 #print1
 
