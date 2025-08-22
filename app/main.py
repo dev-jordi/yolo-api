@@ -1,3 +1,12 @@
+"""
+Este script faz a inferência em imagens com yolov5.
+
+Author: Jordi
+Data: Agosto 21, 2025
+
+"""
+
+
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
 import torch
@@ -8,7 +17,7 @@ from PIL import Image
 app = FastAPI(title="YOLO Object Detection API")
 
 # Carregar modelo YOLO (pré-treinado no COCO)
-MODEL_PATH = "yolov5s.pt"
+MODEL_PATH = "yolov5s.pt" # Arquivo de peso 
 model = torch.hub.load("ultralytics/yolov5", "custom", path=MODEL_PATH)
 
 @app.post("/predict")
@@ -26,5 +35,5 @@ async def predict(file: UploadFile = File(...)):
 
     # Apagar arquivo temporário
     os.remove(temp_path)
-
+    # Json com resultado 
     return JSONResponse(content={"detections": detections})
