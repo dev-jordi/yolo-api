@@ -14,7 +14,7 @@ Você envia uma imagem → a API retorna as detecções (bounding boxes, classes
 
 ### 1. Clonar repositório
 ```bash
-git clone https://github.com/seu-usuario/yolo-api.git
+git clone git@github.com:dev-jordi/yolo-api.git
 cd yolo-api
 ```
 
