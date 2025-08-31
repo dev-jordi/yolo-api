@@ -24,13 +24,19 @@ cd yolo-api
 pip install -r app/requirements.txt yolov5
 ```
 
-## 3. Construir a imagem Docker
+## 3. Rodar o projeto antes do container:
+
+```bash
+python3 main.py
+```
+
+## 4. Construir a imagem Docker
 
 ```bash
 sudo docker build -t yolo-api .
 ```
 
-## 4. Rodar o container
+## 5. Rodar o container
 
 ```bash
 sudo docker run -p 8000:8000 yolo-api
