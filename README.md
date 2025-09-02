@@ -12,40 +12,43 @@ Você envia uma imagem → a API retorna as detecções (bounding boxes, classes
 
 ## ⚡ Como rodar o projeto
 
-### 1. Clonar repositório
+### 1. Clonar repositório:
 ```bash
 git clone git@github.com:dev-jordi/yolo-api.git
 cd yolo-api
 ```
 
-## 2. Instalar as dependências do projeto
+### 2. Instalar as dependências do projeto:
 
 ```bash
 pip install -r app/requirements.txt yolov5
 ```
 
-## 3. Rodar o projeto antes do container:
+### 3. Rodar o projeto antes do container:
 
 ```bash
 python3 main.py
 ```
 
-## 4. Construir a imagem Docker
+### 4. Construir a imagem Docker:
 
 ```bash
 sudo docker build -t yolo-api .
 ```
 
-## 5. Rodar o container
+### 5. Rodar o container:
 
 ```bash
 sudo docker run -p 8000:8000 yolo-api
 ```
 
-A API ficará disponível em:
-👉 http://localhost:8000/docs
+### A API ficará disponível em:
 
-Exemplo:
+```bash
+http://localhost:8000/docs
+```
+
+### Exemplo de output:
 
 ```bash
 {
@@ -63,7 +66,7 @@ Exemplo:
 }
 ```
 
-## 📸 Exemplo de detecção:
+### 📸 Exemplo de detecção:
 
 #print1
 
